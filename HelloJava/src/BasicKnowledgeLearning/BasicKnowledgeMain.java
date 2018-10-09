@@ -10,5 +10,12 @@ public class BasicKnowledgeMain{
             javaBasic.printOperator();
             javaBasic.printVariables();
         }
+        {
+            ProcessControl processControl = new ProcessControl();
+            processControl.printIfAndSwitch();
+            processControl.printWhile();
+            processControl.printFor();
+        }
+        
     }
 }
