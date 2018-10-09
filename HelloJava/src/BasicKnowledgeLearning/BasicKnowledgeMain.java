@@ -16,6 +16,16 @@ public class BasicKnowledgeMain{
             processControl.printWhile();
             processControl.printFor();
         }
-        
+        {
+            StringBasic stringBasic = new StringBasic();
+            stringBasic.printString();
+        }
+        {
+            int[] arr = new int[]{2,67,45,89,32,15,3};
+            ArrayAndSort arrayAndSort = new ArrayAndSort(arr);
+            arrayAndSort.sort();
+            arrayAndSort.reverseSort();
+            arrayAndSort.selectSort();
+        }
     }
 }
