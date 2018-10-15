@@ -27,5 +27,14 @@ public class BasicKnowledgeMain{
             arrayAndSort.reverseSort();
             arrayAndSort.selectSort();
         }
+        {
+            InheritancePolymorphism inheritancePolymorphism = new InheritancePolymorphism();
+            inheritancePolymorphism.printFinalStatic();
+        }
+        {
+            ImportantProcess importantProcess = new ImportantProcess();
+            importantProcess.printException();
+            importantProcess.testExceptionCache();
+        }
     }
 }

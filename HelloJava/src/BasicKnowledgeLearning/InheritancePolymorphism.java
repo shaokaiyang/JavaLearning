@@ -38,8 +38,26 @@ public class InheritancePolymorphism {
     1.定义为final的方法不能被重写；
     2.重写必须满足一个对象向上转型为它的基本类型并调用相同的方法；
     3.定义为final的类不能被继承
+    4.final方法不能被覆盖
      */
 
-
+    /*
+    1.内部类和局部内部类可以随意使用外部类的成员方法以及成员变量，包括private类型；
+    2.内部类的实例一定要绑定在外部类的实例上；
+    3.外部类不可以直接访问内部类的成员变量；
+    4.内部类和外部类的成员变量重名时，可以使用this关键字。this.x++; outClass.this.x++;
+     */
+    private class InnerClass{
+        int y = 0;
+    }
+    InnerClass in = new InnerClass();
+    public InnerClass doit(){
+        in.y = 4;
+        return new InnerClass();
+    }
+    public void testInnerClass(){
+        InheritancePolymorphism out = new InheritancePolymorphism();
+        InheritancePolymorphism.InnerClass in = out.doit();
+    }
 
 }
