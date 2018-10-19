@@ -36,5 +36,11 @@ public class BasicKnowledgeMain{
             importantProcess.printException();
             importantProcess.testExceptionCache();
         }
+        {
+            SetClass setClass = new SetClass("yarn", 1234);
+            setClass.printList();
+            setClass.printMap();
+            setClass.printSet();
+        }
     }
 }
